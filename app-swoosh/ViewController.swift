@@ -24,11 +24,11 @@ class ViewController: UIViewController {
  */
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // Define the function that will be used/called by the screen defined as the segue to return to the main screen.
+    // Set the other screens Back button to the Exit Fn of the view controller to setup
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+        
     }
-
 
 }
 
