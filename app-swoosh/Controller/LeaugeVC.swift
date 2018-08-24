@@ -16,20 +16,12 @@ class LeaugeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    // Define the action from the button tap to call to show the next screen via programmatic segue (prefered)
+    // Setup: click-drag from one VC to the destination VC and give it an identifier
+    @IBAction func onNextTap(_ sender: Any) {
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // Show the VC I want to using performSegue func
+        performSegue(withIdentifier: "skillVCSegue", sender: self)
     }
-    */
 
 }
