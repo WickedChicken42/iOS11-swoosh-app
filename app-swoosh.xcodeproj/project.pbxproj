@@ -15,6 +15,7 @@
 		278FB0EF212F47B600582102 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FB0EE212F47B600582102 /* BorderButton.swift */; };
 		27E5EC9321306E010020D297 /* LeaugeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5EC9221306E010020D297 /* LeaugeVC.swift */; };
 		27E5EC9521306E130020D297 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5EC9421306E130020D297 /* SkillVC.swift */; };
+		27E5EC97213075870020D297 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5EC96213075870020D297 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		278FB0EE212F47B600582102 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		27E5EC9221306E010020D297 /* LeaugeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeVC.swift; sourceTree = "<group>"; };
 		27E5EC9421306E130020D297 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		27E5EC96213075870020D297 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		27E5EC9121306D610020D297 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				27E5EC96213075870020D297 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				27E5EC9321306E010020D297 /* LeaugeVC.swift in Sources */,
 				278FB0DC212F41AB00582102 /* AppDelegate.swift in Sources */,
 				27E5EC9521306E130020D297 /* SkillVC.swift in Sources */,
+				27E5EC97213075870020D297 /* Player.swift in Sources */,
 				278FB0EF212F47B600582102 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,10 +10,17 @@ import UIKit
 
 class LeaugeVC: UIViewController {
 
+    // Definew the player object variable to be used in the VC
+    var player: Player!
+    
+    @IBOutlet var nextBtn: BorderButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Initialize an object of type Player when the VC loads
+        player = Player()
+        
     }
 
     // Define the action from the button tap to call to show the next screen via programmatic segue (prefered)
@@ -24,4 +31,20 @@ class LeaugeVC: UIViewController {
         performSegue(withIdentifier: "skillVCSegue", sender: self)
     }
 
+    @IBAction func onMensTapped(_ sender: Any) {
+        selectLeauge(leaugeType:"mens")
+    }
+
+    @IBAction func onWomensTapped(_ sender: Any) {
+        selectLeauge(leaugeType:"womens")
+    }
+
+    @IBAction func onCoedTapped(_ sender: Any) {
+        selectLeauge(leaugeType:"coed")
+    }
+    
+    func selectLeauge(leaugeType: String) {
+        player.desiredLeauge = leaugeType
+        nextBtn.isEnabled = true
+    }
 }
