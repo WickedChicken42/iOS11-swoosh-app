@@ -8,8 +8,9 @@
 
 import Foundation
 
+// Defining a Player structure to use in the app to hold data
 struct Player {
-    var desiredLeauge: String?
-    var selectedSkillLevel: String?
+    var desiredLeauge: String!
+    var selectedSkillLevel: String!
     
 }

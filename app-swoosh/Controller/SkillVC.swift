@@ -10,10 +10,14 @@ import UIKit
 
 class SkillVC: UIViewController {
 
+    // Initializing the var with an initial blank Player to ebsure one exists
+    var player: Player!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print(player.desiredLeauge)
+        
     }
 
     override func didReceiveMemoryWarning() {

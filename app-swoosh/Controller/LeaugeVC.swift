@@ -47,4 +47,15 @@ class LeaugeVC: UIViewController {
         player.desiredLeauge = leaugeType
         nextBtn.isEnabled = true
     }
+    
+    // Use the prepare func to pass data back to another VC
+    // this fun is called before the VC's viewDidLoad is called
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Checks to see if the segue is the one we want to talk back to - it will fail if it is not the right VC
+        if let skillVC = segue.destination as? SkillVC {
+            // Handing off the the data from this VC to the next VC to deal with
+            
+            skillVC.player = player
+        }
+    }
 }
